@@ -213,7 +213,7 @@ public class SimpleSSHD extends Activity
 							if (!ret.equals("")) {
 								ret += "\n";
 							}
-							ret += "IP: "+ ip;
+							ret += "IP:port "+ ip +  ":" + Prefs.get_port();
 						} else {
 							return ip;
 						}
