@@ -1,0 +1,8 @@
+ndk-build -j8 &&
+mv libs/armeabi/scp libs/armeabi/libscp.so &&
+mv libs/armeabi/sftp-server libs/armeabi/libsftp-server.so &&
+mv libs/armeabi/rsync libs/armeabi/librsync.so &&
+mv libs/armeabi/buffersu libs/armeabi/libbuffersu.so &&
+ant debug 
+# && scp bin/SimpleSSHD-debug.apk lxl@10.10.5.5:/tmp
+
